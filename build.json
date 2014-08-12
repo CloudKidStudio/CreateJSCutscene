@@ -1,0 +1,10 @@
+{
+	"name" : "CreateJSCutscene",
+	"version" : "0.0.1",
+	"description" : "A cutscene player using CreateJS",
+	"url" : "http://github.com/CloudKidStudio/CreateJSCutscene",
+	"output" : "cloudkid-createjs-cutscene",
+	"main" : [
+		"src/CreateJSCutscene.js"
+	]
+}

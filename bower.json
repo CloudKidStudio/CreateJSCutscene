@@ -1,0 +1,20 @@
+{
+	"name": "cloudkid-createjs-cutscene",
+	"version": "0.0.1",
+	"main": "dist/cloudkid-createjs-cutscene.min.js",
+	"dependencies": {
+		"cloudkid-framework": "*",
+		"cloudkid-createjs-display": "git@github.com:CloudKidStudio/CreateJSDisplay.git",
+		"easeljs": "https://github.com/CloudKidStudio/EaselJS.git",
+		"tweenjs": "https://github.com/CloudKidStudio/TweenJS.git",
+		"cloudkid-sound": "git@github.com:CloudKidStudio/CloudKidSound.git#framework",
+		"cloudkid-tasks": "git@github.com:CloudKidStudio/CloudKidTasks.git#framework"
+	},
+	"ignore": [
+		"Gruntfile.js",
+		"build.json",
+		"examples",
+		"docs",
+		"src"
+	]
+}
