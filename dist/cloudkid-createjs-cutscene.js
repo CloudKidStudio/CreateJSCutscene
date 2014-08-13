@@ -176,7 +176,7 @@
 		clip.mouseEnabled = false;
 		clip.framerate = this.framerate;
 		clip.advanceDuringTicks = false;
-		clip.gotoAndStop(0);
+		clip.gotoAndPlay(0);//internally, movieclip has to be playing to change frames during tick() or advance().
 		clip.loop = false;
 		this.addChild(this._clip);
 		
@@ -288,7 +288,7 @@
 		this._endCallback = null;
 		this._clip = null;
 		this._captionsObj = null;
-		this.display.removeChild(this);
+		this.display.stage.removeChild(this);
 		this.display = null;
 	};
 	
