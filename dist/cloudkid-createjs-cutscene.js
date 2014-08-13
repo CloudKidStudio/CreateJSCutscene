@@ -68,7 +68,7 @@
 		this._audioCallback = this._audioCallback.bind(this);
 		this.resize = this.resize.bind(this);
 
-		this.display.addChild(this);
+		this.display.stage.addChild(this);
 
 		this.loadConfig();
 	};
