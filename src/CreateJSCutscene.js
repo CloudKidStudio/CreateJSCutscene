@@ -245,8 +245,8 @@
 			this._captionsObj.seek(this._timeElapsed * 1000);
 		//set the elapsed time of the clip
 		var clip = (!this._clip.timeline || this._clip.timeline.duration == 1) ? this._clip.getChildAt(0) : this._clip;
-		_clip.elapsedTime = this._timeElapsed;
-		if(_clip.currentFrame == _clip.timeline.duration)
+		clip.elapsedTime = this._timeElapsed;
+		if(clip.currentFrame == clip.timeline.duration)
 		{
 			this._animFinished = true;
 			if(this._audioFinished)
