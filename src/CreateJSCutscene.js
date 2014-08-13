@@ -110,7 +110,7 @@
 		cloudkid.Sound.instance.loadConfig(soundConfig);//make sure Sound knows about the audio
 		
 		this._taskMan.addTask(new cloudkid.ListTask("art", manifest, this.onArtLoaded.bind(this)));
-		this._taskMan.addTask(s.createPreloadTask("audio", [soundConfig.soundManifest[0].id], this.onAudioLoaded));
+		this._taskMan.addTask(cloudkid.Sound.instance.createPreloadTask("audio", [soundConfig.soundManifest[0].id], this.onAudioLoaded));
 	};
 	
 	p.onAudioLoaded = function()
