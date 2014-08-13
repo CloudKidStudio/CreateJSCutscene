@@ -1,0 +1,57 @@
+{"frames": {
+
+"CupBody.png":
+{
+	"frame": {"x":592,"y":287,"w":169,"h":141},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":169,"h":141},
+	"sourceSize": {"w":169,"h":141},
+	"pivot": {"x":0,"y":0}
+},
+"FreddyBurger_02.png":
+{
+	"frame": {"x":946,"y":0,"w":69,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":69,"h":53},
+	"sourceSize": {"w":69,"h":53},
+	"pivot": {"x":0,"y":0}
+},
+"SwitchBottom.png":
+{
+	"frame": {"x":0,"y":0,"w":591,"h":479},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":591,"h":479},
+	"sourceSize": {"w":591,"h":479},
+	"pivot": {"x":0,"y":0}
+},
+"SwitchTop.png":
+{
+	"frame": {"x":592,"y":0,"w":353,"h":286},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":353,"h":286},
+	"sourceSize": {"w":353,"h":286},
+	"pivot": {"x":0,"y":0}
+},
+"burgertray.png":
+{
+	"frame": {"x":762,"y":287,"w":201,"h":118},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":201,"h":118},
+	"sourceSize": {"w":201,"h":118},
+	"pivot": {"x":0,"y":0}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "IntroOtherSheet.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f6d2f7987051067d228d0f64f3df9ffe:3097cf7a5405f3bbf6a58faebf8ed5a9:e9c10e3f08f80a54f20764749b0f1c98$"
+}
+}

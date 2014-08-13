@@ -1,0 +1,39 @@
+{"frames": {
+
+"FoodTruck_Intro_LLSign.png":
+{
+	"frame": {"x":0,"y":445,"w":726,"h":361},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":49,"w":726,"h":361},
+	"sourceSize": {"w":764,"h":467},
+	"pivot": {"x":0,"y":0}
+},
+"FoodTruck_Intro_TruckInt.png":
+{
+	"frame": {"x":0,"y":0,"w":900,"h":444},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":900,"h":444},
+	"sourceSize": {"w":900,"h":500},
+	"pivot": {"x":0,"y":0}
+},
+"TruckBack.png":
+{
+	"frame": {"x":727,"y":445,"w":258,"h":118},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":29,"w":258,"h":118},
+	"sourceSize": {"w":308,"h":178},
+	"pivot": {"x":0,"y":0}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "IntroInteriorSheet.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2601cb4bf772c6fef32f6163d0faeaf3:efc6d74beb97d3706542f75e9c9cfae4:9658c9471d6c8c6cf3f8eec8edea3ab1$"
+}
+}

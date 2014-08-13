@@ -1,0 +1,51 @@
+{
+	"settings":
+	{
+		"fps":24,
+		"clip":"FoodTruck_Intro.js",
+		"clipClass":"FoodTruck_Intro",
+		"designedWidth":900,
+		"designedHeight":500
+	},
+	"images":
+	{
+		"FizzysHead":"images/%scale%/FizzysHead.png",
+		"FoodTruck_Intro_BG":"images/%scale%/FoodTruck_Intro_BG.jpg",
+		"FoodTruck_Intro_EndBG":"images/%scale%/FoodTruck_Intro_EndBG.jpg",
+		"FoodTruck_Intro_Panel":"images/%scale%/FoodTruck_Intro_Panel.jpg",
+		"FoodTruck_Intro_SeatsExt":"images/%scale%/FoodTruck_Intro_SeatsExt.jpg",
+		"FoodTruck_Intro_SkyBG":"images/%scale%/FoodTruck_Intro_SkyBG.jpg",
+		"atlasImage_1":"images/%scale%/IntroTruckSheet.png",
+		"atlasData_1":"images/%scale%/IntroTruckSheet.json",
+		"atlasImage_2":"images/%scale%/IntroInteriorSheet.png",
+		"atlasData_2":"images/%scale%/IntroInteriorSheet.json",
+		"atlasImage_3":"images/%scale%/IntroOtherSheet.png",
+		"atlasData_3":"images/%scale%/IntroOtherSheet.json"
+	},
+	"audio":
+	{
+		"context":"sfx",
+		"path":"",
+		"soundManifest":
+		[
+			{
+				"id":"Intro",
+				"src":"audio/Intro"
+			}
+		]
+	},
+	"captions":
+	{
+		"Intro":
+		{
+			"lines":[
+				{"start":0, "end":2900, "content":"Get your Greasy World burgers here!"},
+				{"start":2950, "end":4100, "content":"AHHHHH!"},
+				{"start":4150, "end":5400, "content":"Whoa!"},
+				{"start":5400, "end":8100, "content":"Ha ha! Check out my new wheels!"},
+				{"start":8200, "end":12800, "content":"A food truck to take my famous\nblack bean burgers to the streets!"},
+				{"start":12900, "end":15800, "content":"Now let's feed those hungry customers!"}
+			]
+		}
+	}
+}
