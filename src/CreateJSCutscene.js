@@ -156,7 +156,7 @@
 		{
 			if(atlasData[id] && atlasImages[id])
 			{
-				BitmapUtils.loadSpriteSheet(atlasData[id].frames, atlasImages[id], this.imageScale);
+				createjs.BitmapUtils.loadSpriteSheet(atlasData[id].frames, atlasImages[id], this.imageScale);
 			}
 		}
 	};
