@@ -169,7 +169,9 @@
 		this._taskMan = null;
 		
 		var clip = this._clip = new lib[this.config.settings.clipClass]();
-		if(this._clip.timeline.duration == 1)//if the animation was for the older ComicCutscene, we should handle it gracefully
+		//if the animation was for the older ComicCutscene, we should handle it gracefully
+		//so if the clip only has one frame or is a container, then we get the child of the clip as the animation
+		if(!this._clip.timeline || this._clip.timeline.duration == 1)
 			clip = this._clip.getChildAt(0);
 		clip.mouseEnabled = false;
 		clip.framerate = this.framerate;
@@ -243,7 +245,7 @@
 		if(this._captionsObj)
 			this._captionsObj.seek(this._timeElapsed * 1000);
 		//set the elapsed time of the clip
-		var clip = this._clip.timeline.duration == 1 ? this._clip.getChildAt(0) : this._clip;
+		var clip = (!this._clip.timeline || this._clip.timeline.duration == 1) ? this._clip.getChildAt(0) : this._clip;
 		_clip.elapsedTime = this._timeElapsed;
 		if(_clip.currentFrame == _clip.timeline.duration)
 		{
