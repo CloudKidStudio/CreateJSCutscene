@@ -1,0 +1,524 @@
+{
+    "project": {
+        "name": "CreateJSCutscene",
+        "description": "A cutscene player using CreateJS",
+        "version": "0.0.1",
+        "url": "http://github.com/CloudKidStudio/CreateJSCutscene"
+    },
+    "files": {
+        "src/CreateJSCutscene.js": {
+            "name": "src/CreateJSCutscene.js",
+            "modules": {
+                "cloudkid": 1
+            },
+            "classes": {
+                "CreateJSCutscene": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "cloudkid": {
+            "name": "cloudkid",
+            "submodules": {},
+            "classes": {
+                "CreateJSCutscene": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/CreateJSCutscene.js",
+            "line": 8
+        }
+    },
+    "classes": {
+        "CreateJSCutscene": {
+            "name": "CreateJSCutscene",
+            "shortname": "CreateJSCutscene",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cloudkid",
+            "namespace": "",
+            "file": "src/CreateJSCutscene.js",
+            "line": 8,
+            "description": "CreateJSCutscene is a class for playing a single EaselJS animation synced to a\n\tsingle audio file with cloudkid.Sound, with optional captions.",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "options",
+                    "description": "The runtime specific setup data for the cutscene.",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "display",
+                            "description": "The display or display id of the CreateJSDisplay to draw on.",
+                            "type": "String|Display"
+                        },
+                        {
+                            "name": "configUrl",
+                            "description": "The url of the json config file describing the cutscene. See the example project.",
+                            "type": "String"
+                        },
+                        {
+                            "name": "loadCallback",
+                            "description": "A function to call when loading is complete.",
+                            "type": "Function",
+                            "optional": true
+                        },
+                        {
+                            "name": "pathReplaceTarg",
+                            "description": "A string found in the paths of images that should be replaced with another value.",
+                            "type": "String",
+                            "optional": true
+                        },
+                        {
+                            "name": "pathReplaceVal",
+                            "description": "The string to use when replacing options.pathReplaceTarg.",
+                            "type": "String",
+                            "optional": true
+                        },
+                        {
+                            "name": "imageScale",
+                            "description": "Scaling to apply to all images loaded for the cutscene.",
+                            "type": "Number",
+                            "optional": true,
+                            "optdefault": "1"
+                        },
+                        {
+                            "name": "captions",
+                            "description": "A Captions instance to display captions text on.",
+                            "type": "cloudkid.Captions",
+                            "optional": true
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 31,
+            "description": "When the cutscene is ready to use",
+            "itemtype": "property",
+            "name": "isReady",
+            "type": "Boolean",
+            "access": "public",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 38,
+            "description": "The framerate the cutscene should play at.",
+            "itemtype": "property",
+            "name": "framerate",
+            "type": "Int",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 45,
+            "description": "Reference to the display we are drawing on",
+            "itemtype": "property",
+            "name": "display",
+            "type": "Display",
+            "access": "public",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 52,
+            "description": "The source url for the config until it is loaded, then the config object.",
+            "itemtype": "property",
+            "name": "config",
+            "type": "String|Object",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 58,
+            "description": "The scaling value for all images.",
+            "itemtype": "property",
+            "name": "imageScale",
+            "type": "Number",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 64,
+            "description": "A string found in the paths of images that should be replaced with another value.",
+            "itemtype": "property",
+            "name": "pathReplaceTarg",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 70,
+            "description": "The string to use when replacing options.pathReplaceTarg.",
+            "itemtype": "property",
+            "name": "pathReplaceVal",
+            "type": "String",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 76,
+            "description": "The TaskManager used to load up assets.",
+            "itemtype": "property",
+            "name": "_taskMan",
+            "type": "cloudkid.TaskManager",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 82,
+            "description": "The time elapsed in seconds.",
+            "itemtype": "property",
+            "name": "_elapsedTime",
+            "type": "Number",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 88,
+            "description": "The clip that is being animated.",
+            "itemtype": "property",
+            "name": "_clip",
+            "type": "easeljs.MovieClip",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 94,
+            "description": "The sound instance of the playing audio",
+            "itemtype": "property",
+            "name": "_currentAudioInstance",
+            "type": "cloudkid.Sound.soundInst",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 100,
+            "description": "If the animation has finished playing.",
+            "itemtype": "property",
+            "name": "_animFinished",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 106,
+            "description": "If the audio has finished playing.",
+            "itemtype": "property",
+            "name": "_audioFinished",
+            "type": "Boolean",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 112,
+            "description": "The Captions object to use to manage captions.",
+            "itemtype": "property",
+            "name": "_captionsObj",
+            "type": "cloudkid.Captions",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 118,
+            "description": "The function to call when loading is complete.",
+            "itemtype": "property",
+            "name": "_loadCallback",
+            "type": "Function",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 124,
+            "description": "The function to call when playback is complete.",
+            "itemtype": "property",
+            "name": "_endCallback",
+            "type": "Function",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 131,
+            "description": "Called from the constructor to complete setup and start loading.",
+            "itemtype": "method",
+            "name": "setup",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "The runtime specific setup data for the cutscene.",
+                    "type": "Object",
+                    "props": [
+                        {
+                            "name": "display",
+                            "description": "The display or display id of the CreateJSDisplay to draw on.",
+                            "type": "String|Display"
+                        },
+                        {
+                            "name": "configUrl",
+                            "description": "The url of the json config file describing the cutscene. See the example project.",
+                            "type": "String"
+                        },
+                        {
+                            "name": "loadCallback",
+                            "description": "A function to call when loading is complete.",
+                            "type": "Function",
+                            "optional": true
+                        },
+                        {
+                            "name": "pathReplaceTarg",
+                            "description": "A string found in the paths of images that should be replaced with another value.",
+                            "type": "String",
+                            "optional": true
+                        },
+                        {
+                            "name": "pathReplaceVal",
+                            "description": "The string to use when replacing options.pathReplaceTarg.",
+                            "type": "String",
+                            "optional": true
+                        },
+                        {
+                            "name": "imageScale",
+                            "description": "Scaling to apply to all images loaded for the cutscene.",
+                            "type": "Number",
+                            "optional": true,
+                            "optdefault": "1"
+                        },
+                        {
+                            "name": "captions",
+                            "description": "A Captions instance to display captions text on.",
+                            "type": "cloudkid.Captions",
+                            "optional": true
+                        }
+                    ]
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 176,
+            "description": "Callback for when the config file is loaded.",
+            "itemtype": "method",
+            "name": "onConfigLoaded",
+            "params": [
+                {
+                    "name": "result",
+                    "description": "The loaded result.",
+                    "type": "cloudkid.MediaLoaderResult"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 210,
+            "description": "Callback for when the audio has been preloaded.",
+            "itemtype": "method",
+            "name": "onAudioLoaded",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 220,
+            "description": "Callback for when all art assets have been loaded.",
+            "itemtype": "method",
+            "name": "onArtLoaded",
+            "params": [
+                {
+                    "name": "results",
+                    "description": "The loaded results.",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 269,
+            "description": "Callback for when all loading is complete.",
+            "itemtype": "method",
+            "name": "onLoadComplete",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "An event",
+                    "type": "Event"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 305,
+            "description": "Listener for when the Application is resized.",
+            "itemtype": "method",
+            "name": "resize",
+            "params": [
+                {
+                    "name": "width",
+                    "description": "The new width of the display.",
+                    "type": "Int"
+                },
+                {
+                    "name": "height",
+                    "description": "The new height of the display.",
+                    "type": "Int"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 329,
+            "description": "Starts playing the cutscene.",
+            "itemtype": "method",
+            "name": "start",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "The function to call when playback is complete.",
+                    "type": "Function"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 349,
+            "description": "Callback for when the audio has finished playing.",
+            "itemtype": "method",
+            "name": "_audioCallback",
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 364,
+            "description": "Listener for frame updates.",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "elapsed",
+                    "description": "Time in milliseconds",
+                    "type": "Int"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 402,
+            "description": "Stops playback of the cutscene.",
+            "itemtype": "method",
+            "name": "stop",
+            "params": [
+                {
+                    "name": "doCallback",
+                    "description": "If the end callback should be performed.",
+                    "type": "Boolean",
+                    "optional": true,
+                    "optdefault": "false"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        },
+        {
+            "file": "src/CreateJSCutscene.js",
+            "line": 422,
+            "description": "Destroys the cutscene.",
+            "itemtype": "method",
+            "name": "destroy",
+            "access": "public",
+            "tagname": "",
+            "class": "CreateJSCutscene",
+            "module": "cloudkid"
+        }
+    ],
+    "warnings": []
+}
