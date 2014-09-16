@@ -342,7 +342,7 @@
 		var id = this.config.audio.soundManifest[0].id;
 		this._currentAudioInstance = cloudkid.Sound.instance.play(id, this._audioCallback);
 		if(this._captionsObj)
-			this._captionsObj.run(id);
+			this._captionsObj.play(id);
 		cloudkid.Application.instance.on("update", this.update);
 	};
 	
