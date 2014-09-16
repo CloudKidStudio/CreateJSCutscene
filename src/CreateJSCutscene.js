@@ -166,7 +166,7 @@
 		tasks.push(new cloudkid.LoadTask("config", this.config, this.onConfigLoaded.bind(this)));
 		// create a texture from an image path
 		this._taskMan = new cloudkid.TaskManager(tasks);
-		this._taskMan.addEventListener(
+		this._taskMan.on(
 			cloudkid.TaskManager.ALL_TASKS_DONE, 
 			this.onLoadComplete.bind(this)
 		);
@@ -274,7 +274,7 @@
 	*/
 	p.onLoadComplete = function(evt)
 	{
-		this._taskMan.removeAllEventListeners();
+		this._taskMan.off();
 		this._taskMan.destroy();
 		this._taskMan = null;
 		
