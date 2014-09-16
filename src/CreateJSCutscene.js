@@ -176,7 +176,7 @@
 	/**
 	*	Callback for when the config file is loaded.
 	*	@method onConfigLoaded
-	*	@param {cloudkid.MediaLoaderResult} result The loaded result.
+	*	@param {cloudkid.LoaderResult} result The loaded result.
 	*	@private
 	*/
 	p.onConfigLoaded = function(result)
